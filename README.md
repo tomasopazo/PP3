@@ -9,9 +9,9 @@ Directorio maestro:
 PP3
 
 Estructura de las ramas:
-api: /PP3/api/
-web: /PP3/web/
-mobile: /PP3/mobile/
+- api: /PP3/api/
+- web: /PP3/web/
+- mobile: /PP3/mobile/
 
 Es importante mantener la estructura de las ramas para evitar conflictos cuando realicemos el merge
 (la unión de las ramas)
