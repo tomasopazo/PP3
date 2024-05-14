@@ -1,4 +1,6 @@
+// Importa clase sequelize para crear un objeto con las credenciales de la base de datos
 const {Sequelize} = require('sequelize');
+// Importa dotenv para obtener las variables declaradas en .env
 require('dotenv').config()
 
 const sequelize = new Sequelize(

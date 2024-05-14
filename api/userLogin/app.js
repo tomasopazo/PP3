@@ -1,4 +1,5 @@
 // Importacion librerias
+// express
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -25,8 +26,13 @@ app.use(express.json());
 app.use(cors());
 
 // Configuración de los endpoints
+// Ruta /users, es para manejo de usuarios
 app.use('/users', UserRoutes);
+
+// Ruta /login para inicios de sesión
 app.use('/login', AuthRoute);
+
+// Ruta /register para la creación de usuarios nuevos
 app.use('/register', registerRoute);
 
 // Define el puerto de la api
