@@ -4,6 +4,7 @@ Lista de ramas:
 - api : Rama dedicada a la api del proyecto
 - web : Rama para la interfaz web
 - mobile : Rama para interfaz mobile
+- modelos : Rama para cargar codigo de referencia o de ejemplo
 
 Directorio maestro:
 PP3
@@ -12,6 +13,7 @@ Estructura de las ramas:
 - api: /PP3/api/
 - web: /PP3/web/
 - mobile: /PP3/mobile/
+- modelos: /PP3/modelos/
 
 Es importante mantener la estructura de las ramas para evitar conflictos cuando realicemos el merge
 (la unión de las ramas)
@@ -29,3 +31,6 @@ git clone https://github.com/Nacho2001/PP3.git -b "web"
 
 Clonar rama mobile:
 git clone https://github.com/Nacho2001/PP3.git -b "mobile"
+
+Clonar rama modelos:
+git clone https://github.com/Nacho2001/PP3.git -b "modelos"
