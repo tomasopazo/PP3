@@ -4,20 +4,21 @@ import CustomButton from './components/CustomButton';
 import firebaseConnect from './callbacks/firestoreConnect';
 import readData from './callbacks/readData';
 import { useEffect, useState } from 'react';
+import setData from './callbacks/setData';
 
 export default function App() {
-  const [buttonColor, setButtonColor] = useState();
+  const [colors, setColors] = useState();
   useEffect(() => {
     const getColors = async () => {
       const data = await readData();
-      setButtonColor(data);
+      setColors(data);
     }
     getColors()
   }, [])
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
-        {<CustomButton buttonColor={buttonColor} />}
+        <CustomButton colors={colors}/>
       <StatusBar style="auto" />
     </View>
   );
