@@ -5,11 +5,12 @@ async function setData(colors){
     let objectColor = colors.color;
     let textColor = colors.text;
     try {
-        await setDoc(doc(db, "getColors","objects"), { 
+        let sendData = await setDoc(doc(db, "getColors","objects"), { 
             color: objectColor,
             text: textColor
         })
-        console.log("Objeto actualizado");
+        console.log(sendData);
+        //console.log(`Objeto actualizado: Boton(${objectColor}); Texto(${textColor})`);
     } catch (error) {
         console.error(error);
     }

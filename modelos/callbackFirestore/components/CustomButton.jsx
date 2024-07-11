@@ -1,52 +1,16 @@
 import './CustomButton.css';
-import { useState } from 'react';
 import setData from '../callbacks/setData';
+import { useState } from 'react';
 
 function CustomButton(props){
-    const [colors, setColors] = useState();
-    setColors(props.colors);
-
-    /*const cambioColor = async () => {
-        switch (colors.color) {
-          case "red":
-            setColors({
-                color: "blue",
-                text: "white"
-            })
-            break;
-          case "blue":
-            setColors({
-                color: "red",
-                text: "white"
-            })
-            break;
-          default:
-            setColors({
-                color: "",
-                text: ""
-            })
-            break;
-        }
-        await setData(colors);
-      }*/
-    if (colors != null) {
-        const colorBoton = colors.color;
+    const cambioColor = props.cambioColor;
         return (
             <>
-                <button className="button" style={{color: colorBoton}} onClick={cambioColor}>
+                <button className="button" style={{color: props.colors.color}} onClick={cambioColor}>
                     Cambio Ahora!!
                 </button>
             </>
-        )   
-    } else {
-        return (
-            <>
-                <button className="button">
-                    Cambio ahora!!
-                </button>
-            </>
         )
-    }
 }
 
 export default CustomButton;
