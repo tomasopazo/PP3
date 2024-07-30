@@ -4,16 +4,12 @@ import db from "./firestoreConnect";
 async function setData(colors){
     let objectColor = colors.color;
     let textColor = colors.text;
-    try {
-        let sendData = await setDoc(doc(db, "getColors","objects"), { 
-            color: objectColor,
-            text: textColor
-        })
-        console.log(sendData);
-        //console.log(`Objeto actualizado: Boton(${objectColor}); Texto(${textColor})`);
-    } catch (error) {
-        console.error(error);
+    const objecto = {
+        color: objectColor,
+        text: textColor
     }
+
+    await setDoc(doc(db,"getColors","objects"), objecto)
 }
 
 export default setData;
