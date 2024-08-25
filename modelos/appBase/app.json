@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "callbackFirestore",
-    "slug": "callbackFirestore",
+    "name": "appBase",
+    "slug": "appBase",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,14 +19,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nacho2001.callbackFirestore"
+      "package": "com.nacho2001.appBase"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "22b8b92a-2746-4ddd-a576-1f112b61ac7a"
+        "projectId": "d6641adf-2258-4abb-bbb0-0867f4cb4d57"
       }
     }
   }

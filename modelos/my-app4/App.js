@@ -5,7 +5,6 @@ import firestore from '@react-native-firebase/firestore';
 import firebase from '@react-native-firebase/app';
 import firebaseConfig from './config/firebaseConfig';
 
-// Ensure Firebase is initialized
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }

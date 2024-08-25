@@ -1,7 +1,0 @@
-{
-  "name": "ionApp",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
